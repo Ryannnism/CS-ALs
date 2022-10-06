@@ -1,8 +1,7 @@
 import datetime
-x = input("x in DD/MM/YYYY, this will be the end date")
-y = input("y in DD/MM/YYYY, this will be the start date")
+x = input("x in DD/MM/YYYY, this will be the start date")
+y = input("y in DD/MM/YYYY, this will be the end date")
 datetimex = datetime.datetime.strptime(x,"%d/%m/%Y").date()
 datetimey = datetime.datetime.strptime(y,"%d/%m/%Y").date()
-days = datetimey-datetimex
-print(days.days)
-
+date_difference = datetimey-datetimex
+print(date_difference)
