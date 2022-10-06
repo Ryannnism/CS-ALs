@@ -1,1 +1,8 @@
+import datetime
+x = input("x in DD/MM/YYYY, this will be the end date")
+y = input("y in DD/MM/YYYY, this will be the start date")
+datetimex = datetime.datetime.strptime(x,"%d/%m/%Y").date()
+datetimey = datetime.datetime.strptime(y,"%d/%m/%Y").date()
+days = datetimey-datetimex
+print(days.days)
 
