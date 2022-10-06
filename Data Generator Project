@@ -1,10 +1,14 @@
-from random import randint
+import random
 import datetime
 x = input("char, boolean, integer, real, float, date")
 y = x 
 def char(y):
-    return chr(randint(1,1007))
+    return chr(random.randint(1,1007)) 
 if x == "char" or "Char" or "CHAR":
     print(char(y))
 
-def boolean(y)
+def boolean(y):
+    return random.randint(1,1007)
+if x == "boolean" or "Boolean" or "BOOLEAN":
+    if boolean(y)/2 == 0:
+        
