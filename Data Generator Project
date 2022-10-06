@@ -1,0 +1,10 @@
+from random import randint
+import datetime
+x = input("char, boolean, integer, real, float, date")
+y = x 
+def char(y):
+    return chr(randint(1,1007))
+if x == "char" or "Char" or "CHAR":
+    print(char(y))
+
+def boolean(y)
