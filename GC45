@@ -1,0 +1,5 @@
+x = input("type")
+if len(x) > 1:
+    print("error")
+else: 
+    print("you have typed one character. congrats.")
