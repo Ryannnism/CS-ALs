@@ -1,14 +1,21 @@
 import random
 import datetime
-x = input("char, boolean, integer, real, float, date")
-y = x 
-def char(y):
-    return chr(random.randint(1,1007)) 
-if x == "char" or "Char" or "CHAR":
-    print(char(y))
 
-def boolean(y):
-    return random.randint(1,1007)
-if x == "boolean" or "Boolean" or "BOOLEAN":
-    if boolean(y)/2 == 0:
-        
+x = input("char, boolean, integer, real, float, date")
+y = x
+def function(y):
+  return random.randint(1,1029)
+
+if x in "char" or "Char" or "CHAR":
+  print(chr(function(y)))
+elif x in "boolean" or "Boolean" or "BOOLEAN":
+  if function(y)/2 == 0:
+    print(True)
+  elif function(y)/2 != 0:
+    print(False)
+elif x in "Integer" or "integer" or "INTEGER":
+  print(function(y))
+elif x in "Real" or "real" or "REAL":
+  print(function(y))
+elif x in "float" or "FLOAT" or "Float": 
+  print(float(function(y)))
