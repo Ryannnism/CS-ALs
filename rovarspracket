@@ -1,0 +1,12 @@
+word = input('string in rovar: ')
+def rovar(word):
+  new_word = ''
+  vowels = ['a','e','i','o','u','y']
+  for i in word:
+    if i not in vowels:
+      new_word += i + "o"+ i
+    if i in vowels:
+      new_word += i
+  return new_word
+
+print ("returned:", rovar(word))
