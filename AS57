@@ -1,0 +1,14 @@
+x = input("enter 7 bits: ")
+def parity(x):
+  byte = 0 
+  count= 0
+  for i in x:
+    if i == "1":
+      count += 1 
+  if count / 2 == 0:
+    byte = 0
+  if count / 2 != 0:
+    byte = 1
+  return byte
+print ("parity byte(even) is:", parity(x))
+ 
