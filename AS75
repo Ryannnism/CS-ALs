@@ -1,0 +1,25 @@
+x = int(input("number"))
+y = str(x)
+for i in range(len(y)): 
+  bcd=  ''
+  if y[i] == '0':
+    bcd += '0000'
+  elif y[i] == '1':
+    bcd+= '0001'
+  elif y[i] == '2': 
+    bcd+= '0010'
+  elif y[i] == '3':
+    bcd+='0011'
+  elif y[i] == '4':
+    bcd+= '0100'
+  elif y[i] == '5':
+    bcd+= '0101'
+  elif y[i] == '6':
+    bcd+= '0110'
+  elif y[i]== '7':
+    bcd += '0111'
+  elif y[i]=='8':
+    bcd+= '1000'
+  elif y[i] == '9':
+    bcd+= '1001'
+  print(bcd)
