@@ -1,0 +1,7 @@
+import random
+
+x = input("Student's Name: ")
+insult1 =['shut up', "don't talk" , 'have you seen yourself' ]
+insult2 = ['you look like a monkey.', "you're the stupidest person I've ever seen.","you probably don't even know what you're rambling on about, you bumbling buffoon!"]
+
+print(random.choice(insult1), x, random.choice(insult2))
