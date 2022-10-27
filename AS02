@@ -1,0 +1,14 @@
+myarray= []
+for i in range(10):
+  item = input("item")
+  myarray.append(item)
+def search(itemfind):
+  itemfind = input("itemfind")
+  found = False
+  for i in range (1, len(myarray)):
+    if myarray[i] == itemfind:
+      found = True
+      break
+  return found
+
+print(search(myarray))
