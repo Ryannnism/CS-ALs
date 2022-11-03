@@ -1,0 +1,6 @@
+sales = float(input("Sales in $: "))
+gp = float(input("Gross Profit in $: "))
+np = float(input("Net Profit in $: "))
+gpm = (gp/sales)*100
+npm = (np/sales)*100
+print("Gross Profit Margin:", gpm, "%", "\n" "Net Profit Margin:", npm, "%")
