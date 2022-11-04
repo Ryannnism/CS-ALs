@@ -1,0 +1,8 @@
+
+mystr = input("word: ")
+list = []
+n = int(len(mystr))
+for i in range(n):
+  list.append(mystr[i])
+list.reverse()
+print(list)
