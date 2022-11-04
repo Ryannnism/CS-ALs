@@ -1,0 +1,22 @@
+entry_list1 = [""]*30
+entry_list2 = [""]*30
+for count in range(30):
+  print("Round", count+1)
+  choice1 = input("Player 1. Choose R, P or S.\n")
+  while choice1.upper() not in ["R","S","P"]:
+    print("Your data is invalid. Please try again.")
+    choice1 = input("Player 1. Choose R, P or S.\n")
+  choice2 = input("Player 2. Choose R, P or S.\n")
+  while choice2.upper() not in ["R","S","P"]:
+    print("Your data is invalid. Please try again.")
+    choice2 = input("Player 2. Choose R, P or S.\n")
+  entry_list1[count] = choice1.upper()
+  entry_list2[count] = choice2.upper()
+  result1 = entry_list1[count]
+  result2 = entry_list2[count]
+  if result1 == result2:
+    print("It's a tie! Both players played:", result1)
+  elif(result1 == "S" and result2 == "P") or (result1 == "P" and result2 == "R") or (result1 == "R" and result2 == "S"):
+    print("Player 1 wins! Player one played:", result1)
+  else:
+    print("Player 2 wins! Player 2 wins with:", result2)
