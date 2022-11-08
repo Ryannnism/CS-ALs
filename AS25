@@ -1,0 +1,10 @@
+def histogram():
+  value = int(input("How many bars?"))
+  list = []
+  for i in range(value):
+    vals = int(input("how long?"))
+    v = "*"*vals
+    list.append(v)
+  for i in range(len(list)):
+    print(list[i])
+print(histogram())
