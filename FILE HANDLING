@@ -1,0 +1,22 @@
+# count1 = 0
+word = "if"
+# with open("if.txt","r") as whole_file:
+#   for line in whole_file:
+#     line = line.lower()
+#     if line.find(word) != -1:
+#       count1 += 1
+# with open("if.txt", "a") as existing_file:
+#   for i in range (37,38):
+#     line_to_write = "\n" + str(count1)
+#     existing_file.write(line_to_write)
+      
+# count2 = 0
+# with open("mam.txt","r") as whole_file:
+#   for line in whole_file:
+#     line = line.lower()
+#     if line.find(word) != -1:
+#       count2 += 1
+# with open("mam.txt", "a") as existing_file:
+#   for i in range (39,40):
+#     line_to_write = "\n" + str(count2)
+#     existing_file.write(line_to_write)
