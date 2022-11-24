@@ -1,0 +1,14 @@
+# pt1
+with open("if.txt","r") as whole_file:
+  for line in whole_file:
+    print(line,end="")
+# pt2
+x = input("if or mam")
+if x == "if" or "If":
+  with open("if.txt","r") as whole_file:
+    for line in whole_file:
+      print(line,end="")
+if x == "mam" or "Mam":
+  with open("if.txt","r") as whole_file:
+    for line in whole_file:
+      print(line,end="")
