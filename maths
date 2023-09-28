@@ -1,0 +1,26 @@
+import random
+def generate_data(n):
+    data = [random.randint(1, 100) for i in range(n)]
+    return data
+  
+def create_exercises(data):
+    sorted_data = sorted(data)
+    exercise = f"Sort the following list in ascending order: {data}"
+    solution = f"The sorted list is: {sorted_data}"
+    return exercise, solution
+  
+datanum = int(input("num of data"))
+tobesorted = generate_data(datanum)
+exercise, solution = create_exercises(tobesorted)
+
+def savedata(data, filename):
+    with open(filename, 'w') as file:
+        for item in data:
+            file.write(str(item) + '\n')
+
+savedata(tobesorted, "data_to_sort.txt")
+with open("exercises.txt", 'w') as exercises_file:
+    exercises_file.write(exercise + '\n')
+    exercises_file.write('\n') 
+    exercises_file.write(solution)
+print("everything is saved go n check it tysm")
