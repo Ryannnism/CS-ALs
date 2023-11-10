@@ -1,0 +1,66 @@
+import os
+catarray=[]
+class CutestCats:
+    def __init__(self,name,desc,weight,length,lifeexp,url):
+        self.name = name
+        self.desc = desc
+        self.weight = weight
+        self.length = length
+        self.lifeexp = lifeexp
+        self.url =url
+
+    def initiator(self):
+        print("Name:", self.name)
+        print("Description:", self.desc)
+        print("Weight:", self.weight)
+        print("Length:", self.length)
+        print("Life Expectancy:", self.lifeexp)
+        print("URL:", self.url)
+
+    def GetCatDetails(self):
+        print(constructor(self))
+
+    def GetCatLife(self):
+        print("Name:", self.name)
+        print("Life Expectancy:", self.lifeexp)
+
+    def Constructor(self):
+        try:
+            with open(cutestcats.txt, 'r'):
+                for i in range(5):
+                    name = cutestcats.txt.readline().strip()
+                    des1 = cutestcats.txt.readline().strip()
+                    weightRAW = cutestcats.txt.readline().strip()
+                    lengthRAW = cutestcats.txt.readline().strip()
+                    des2 = cutestcats.txt.readline().strip()
+                    lifeRAW = cutestcats.txt.readline().strip()
+                    image = cutestcats.txt.readline().strip()
+
+                    weightParts = weightRAW.split(" ")
+                    if weightParts[1] == "Up":
+                        weight = "16.25"
+                    else:
+                        weight = (int(weightParts[1]) + int(weightParts[3]))/2
+
+                    lengthParts = lengthRAW.split(" ")
+                    if lengthParts[1] == "A":
+                        length = "18"
+                    elif lengthParts[1] == "About":
+                        length = "24"
+                    elif lengthParts[1] == "3":
+                        length = "3"
+                    else:
+                        length = (int(lengthParts[1]) + int(lengthParts[3])) / 2
+
+                    description = des1 + "\n" + des2
+                    catarray.append(CutestCats(name, description, weight, length, lifeexp, url))
+
+
+
+                lifeParts = lifeRAW.split(" ")
+                life = (int(lifeParts[2]) + int(lifeParts[4]) )/2
+
+
+
+        except:
+            print("looking at ", os.getcwd())
