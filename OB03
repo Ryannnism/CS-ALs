@@ -1,0 +1,27 @@
+class Players:
+    def __init__(self):
+        self.number = ''
+        self.forename =''
+        self.surname = ''
+        self.position =''
+        self.community = 0
+        self.injured = True
+        
+    def constructor():
+        print("Number:", self.number)
+        print("Forename:", self.forename)
+        print("Surname:", self.surname)
+        print("Position:", self.position)
+        print("Community Involvement:", self.community)
+        
+    def GetPlayerInfo(self): 
+        return constructor(self)
+    
+    def ChangeCommunityInvolvement(self,change): 
+        self.community += change
+        
+    def ChangeInjured(self): 
+        if self.injured == True:
+            self.injured = False
+        else: 
+            self.injured = True
